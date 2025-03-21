@@ -1,8 +1,10 @@
 #include <stdio.h>
 
 int main() {
+
+    // variáreis para os dados da carta número 1
     
-    char letra1;
+    char estado1;
     char codigo1[5];
     char cidade1[20];
     int populacao1;
@@ -10,13 +12,17 @@ int main() {
     float pib1;
     int turisticos1;
 
-    char letra2;
+    // variáreis para os dados da carta número 2
+    
+    char estado2;
     char codigo2[5];
     char cidade2[20];
     int populacao2;
     float area2;
     float pib2;
     int turisticos2;
+
+    // inserção dos dados da primeira carta
     
     printf("Cadastre a primeira carta:\n");
     
@@ -44,6 +50,8 @@ int main() {
     printf("--------------------------\n");
     printf("Primeira carta cadastrada.\n");
     printf("--------------------------\n");
+
+    // inserção dos dados da segunda carta
     
     printf("Cadastre a segunda carta:\n");
     
@@ -71,14 +79,16 @@ int main() {
     printf("--------------------------\n");
     printf("Cartas cadastradas:\n");
     printf("--------------------------\n");
+
+    // exibição dos dados de ambas as cartas no terminal
     
     printf(" Carta 1:\n");
-    printf(" Estado: %c\n Código: %s\n Nome da cidade: %s\n População: %d habitantes\n Área: %.2fkm²\n PIB: R$%.2f bi\n Pontos Turísticos: %d\n", letra1, codigo1, cidade1, populacao1, area1, pib1, turisticos1);
+    printf(" Estado: %c\n Código: %s\n Nome da cidade: %s\n População: %d habitantes\n Área: %.2fkm²\n PIB: R$%.2f bi\n Pontos Turísticos: %d\n", estado1, codigo1, cidade1, populacao1, area1, pib1, turisticos1);
     
     printf("--------------------------\n");
     
     printf(" Carta 2:\n");
-    printf(" Estado: %c\n Código: %s\n Nome da cidade: %s\n População: %d habitantes\n Área: %.2fkm²\n PIB: R$%.2f bi\n Pontos Turísticos: %d\n", letra2, codigo2, cidade2, populacao2, area2, pib2, turisticos2);
+    printf(" Estado: %c\n Código: %s\n Nome da cidade: %s\n População: %d habitantes\n Área: %.2fkm²\n PIB: R$%.2f bi\n Pontos Turísticos: %d\n", estado2, codigo2, cidade2, populacao2, area2, pib2, turisticos2);
     
     return 0;
 }
