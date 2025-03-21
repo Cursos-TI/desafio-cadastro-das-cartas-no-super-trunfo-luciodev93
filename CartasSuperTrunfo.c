@@ -4,7 +4,7 @@ int main() {
 
     // variáreis para os dados da carta número 1
     
-    char estado1;
+    char letra1;
     char codigo1[5];
     char cidade1[20];
     int populacao1;
@@ -14,7 +14,7 @@ int main() {
 
     // variáreis para os dados da carta número 2
     
-    char estado2;
+    char letra2;
     char codigo2[5];
     char cidade2[20];
     int populacao2;
@@ -27,7 +27,7 @@ int main() {
     printf("Cadastre a primeira carta:\n");
     
     printf("Digite uma letra:\n");
-    scanf(" %c", &letra1);
+    scanf(" %c", &letra1); // adicionado espaço antes do especificador;
     
     printf("Digite um código (a letra digitada anteriormente + dois números):\n");
     scanf("%s", codigo1);
@@ -56,7 +56,7 @@ int main() {
     printf("Cadastre a segunda carta:\n");
     
     printf("Digite uma letra:\n");
-    scanf(" %c", &letra2);
+    scanf(" %c", &letra2); // adicionado espaço antes do especificador; para ignorar o \n da linha anterior ao teclar Enter
     
     printf("Digite um código (a letra digitada anteriormente + dois números):\n");
     scanf("%s", codigo2);
@@ -83,12 +83,12 @@ int main() {
     // exibição dos dados de ambas as cartas no terminal
     
     printf(" Carta 1:\n");
-    printf(" Estado: %c\n Código: %s\n Nome da cidade: %s\n População: %d habitantes\n Área: %.2fkm²\n PIB: R$%.2f bi\n Pontos Turísticos: %d\n", estado1, codigo1, cidade1, populacao1, area1, pib1, turisticos1);
+    printf(" Estado: %c\n Código: %s\n Nome da cidade: %s\n População: %d habitantes\n Área: %.2fkm²\n PIB: R$%.2f bi\n Pontos Turísticos: %d\n", letra1, codigo1, cidade1, populacao1, area1, pib1, turisticos1);
     
     printf("--------------------------\n");
     
     printf(" Carta 2:\n");
-    printf(" Estado: %c\n Código: %s\n Nome da cidade: %s\n População: %d habitantes\n Área: %.2fkm²\n PIB: R$%.2f bi\n Pontos Turísticos: %d\n", estado2, codigo2, cidade2, populacao2, area2, pib2, turisticos2);
+    printf(" Estado: %c\n Código: %s\n Nome da cidade: %s\n População: %d habitantes\n Área: %.2fkm²\n PIB: R$%.2f bi\n Pontos Turísticos: %d\n", letra2, codigo2, cidade2, populacao2, area2, pib2, turisticos2);
     
     return 0;
 }
