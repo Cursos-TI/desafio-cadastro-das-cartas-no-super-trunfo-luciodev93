@@ -112,14 +112,7 @@ int main() {
     PIB multiplicado por 1 bilhão para que o valor do PIB seja inserido na forma abreviada (123.456 bi).
     */
 
-    populacao = populacao1 > populacao2;
-    area = area1 > area2;
-    pib = pib1 > pib2;
-    turisticos = turisticos1 > turisticos2;
-    densidade = densidade1 > densidade2;
-    capita = capita1 > capita2;
-    superpoder = superpoder1 > superpoder2;
-
+    
     printf("--------------------------\n");
     printf("Cartas cadastradas:\n");
     printf("--------------------------\n");
@@ -131,18 +124,23 @@ int main() {
     
     printf(" Carta 2:\n");
     printf(" Estado: %c\n Código: %s\n Nome da cidade: %s\n População: %lu habitantes\n Área: %.2fkm²\n PIB: R$ %.2f bi\n Pontos Turísticos: %d\n Densidade populacional: %.2f hab./km²\n PIB per capita: R$ %.2f\n", letra2, codigo2, cidade2, populacao2, area2, pib2, turisticos2, densidade2, capita2);
-    printf(".\n");
+    printf("...\n");
     
-    // impressão do comparativo dos valores das cartas
+    // impressão do comparativo dos valores das cartas e da carta vencedora
 
     printf("---Comparativo entre as cartas---\n");
-    printf("População - Carta 1 > Carta 2: %d\n", populacao);
-    printf("Área - Carta 1 > Carta 2: %d\n", area);
-    printf("PIB - Carta 1 > Carta 2: %d\n", pib);
-    printf("Pontos Turísticos - Carta 1 > Carta 2: %d\n", turisticos);
-    printf("Densidade populacional - Carta 1 > Carta 2: %d\n", densidade);
-    printf("PIB per capita - Carta 1 > Carta 2: %d\n", capita);
-    printf("SUPER PODER - Carta 1 > Carta 2: %d\n", superpoder);
+    printf("...\n");
+    printf("PIB:\n");
+    printf("Carta 1: %s - R$ %.2f bi.\n", cidade1, pib1);
+    printf("Carta 2: %s - R$ %.2f bi.\n", cidade2, pib2);
+
+    // comparativo do atributo PIB
+
+    if (pib1 > pib2) {
+        printf("Carta 1 (%s) venceu!\n", cidade1);
+    } else {
+        printf("Carta 2 (%s) venceu!\n", cidade2);
+    } 
     
     return 0;
 }
